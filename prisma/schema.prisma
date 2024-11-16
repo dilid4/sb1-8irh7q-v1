@@ -1,0 +1,26 @@
+// Add to existing schema.prisma
+
+model Market {
+  id            String   @id @default(uuid())
+  symbol        String   @unique
+  isActive      Boolean  @default(false)
+  accountTypes  String[] @default(["standard"])
+  minDeposit    Float    @default(0)
+  maxLeverage   Int      @default(100)
+  spreadType    String   @default("variable")
+  commission    Float    @default(0)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@index([isActive])
+}
+
+model MarketGroup {
+  id          String   @id @default(uuid())
+  name        String
+  type        String
+  description String
+  markets     Market[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}

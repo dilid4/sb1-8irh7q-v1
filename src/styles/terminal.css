@@ -1,0 +1,49 @@
+/* Terminal Specific Styles */
+.market-category {
+  transition: all 0.2s ease-in-out;
+}
+
+.market-category:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.category-indices {
+  background: linear-gradient(45deg, #1a472a, #2d5a3f);
+}
+
+.category-commodities {
+  background: linear-gradient(45deg, #8b4513, #a0522d);
+}
+
+.category-forex {
+  background: linear-gradient(45deg, #2e7d32, #388e3c);
+}
+
+.category-treasury {
+  background: linear-gradient(45deg, #795548, #8d6e63);
+}
+
+.category-etfs {
+  background: linear-gradient(45deg, #1565c0, #1976d2);
+}
+
+.category-us-shares {
+  background: linear-gradient(45deg, #0d47a1, #1565c0);
+}
+
+.category-hk-shares {
+  background: linear-gradient(45deg, #b71c1c, #c62828);
+}
+
+.category-uk-shares {
+  background: linear-gradient(45deg, #1a237e, #283593);
+}
+
+.category-german-shares {
+  background: linear-gradient(45deg, #000000, #212121);
+}
+
+.category-french-shares {
+  background: linear-gradient(45deg, #0d47a1, #1565c0);
+}
